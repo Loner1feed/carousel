@@ -1,0 +1,149 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "gilroy";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap {
+  margin: 0px auto;
+  padding: 0px 20px;
+  width: 100%;
+  max-width: 1840px;
+}
+
+.options {
+  display: none;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 72px;
+  color: #25325D;
+  margin-top: 0;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 74px;
+  color: #25325D;
+  margin: 0;
+}
+
+p {
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  color: #25325D;
+  margin-bottom: 0;
+}
+
+.wheelScreen {
+  background: url(../../img/bg-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.wheelScreen__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.wheelScreen__text {
+  padding-top: 210px;
+}
+
+.wheel {
+  position: relative;
+  margin-left: 30px;
+  width: 880px;
+  aspect-ratio: 1/1;
+}
+
+#wheel__canvas {
+  width: 100%;
+  height: 100%;
+}
+
+#wheel__adornment {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#wheel__adornment2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+
+#spinButton {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 140px;
+  height: 140px;
+  aspect-ratio: 1/1;
+  background: radial-gradient(50% 50% at 50% 50%, #E14040 0%, #D13535 100%);
+  color: #fff;
+  border-radius: 50%;
+  /* border-radius: 30px; */
+  border: 17px solid #FFC554;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 31px;
+  text-transform: uppercase;
+  /* box-sizing: content-box; */
+}
+
+.completeScreen {
+  background: url(../../img/bg-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.completeScreen__wrap {
+  max-width: 1800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 210px;
+}
+.completeScreen__text {
+  padding-top: 210px;
+}
+.completeScreen__img {
+  aspect-ratio: 1/1;
+}
+.completeScreen__img img {
+  width: 100%;
+}
