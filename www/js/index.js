@@ -93,7 +93,6 @@ const drawTriangle = () => {
 
 // draw adornments
 const drawAdornments = () => {
-  console.log(degreesPerSegment);
   
   ctx2.beginPath();
   ctx2.arc(canvasCenterByWith, canvasCenter, outerRadius - 10, 0, 360)
@@ -182,10 +181,13 @@ function calculatePrize() {
   // generating array according to % of win
   let probArr = [];
   mapped.forEach(el => {
-    for (let i = 1; i <= el.rate; i++) {
-      probArr.push(el.order);
+    if (el.rate > 0) {
+      for (let i = 1; i <= el.rate; i++) {
+        probArr.push(el.order);
+      }
     }
   });
+  console.log(probArr);
   let shuffled = shuffle(probArr);
   let wonDegrees = shuffled[rand - 1] * degreesPerSegment - degreesPerSegment / 2;
   console.log(shuffled[rand - 1], wonDegrees);
